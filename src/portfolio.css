@@ -3,6 +3,7 @@
   --background-color: #c9e8ff;
   --link-color: #120d5e;
   --transition-speed: 0.2s;
+  --heading-font-family: "Inter";
 }
 
 body {
@@ -12,13 +13,26 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Inter";
+  font-family: var(--heading-font-family);
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.btn {
+  transition: background-color var(--transition-speed);
 }
