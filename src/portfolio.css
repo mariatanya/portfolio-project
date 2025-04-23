@@ -6,6 +6,10 @@
   --heading-font-family: "Inter";
 }
 
+.container {
+  padding: 25px 10px;
+}
+
 body {
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
@@ -24,15 +28,33 @@ h2 {
   font-size: 35px;
 }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
 .text-primary {
   color: var(--primary-color);
 }
 
 .btn {
   transition: background-color var(--transition-speed);
+}
+
+.hero-image {
+  width: fit-content;
+  max-height: 75%;
+}
+
+@media (max-width: 576px) {
+  .hero-image {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .btn-outline-secondary {
+    padding: 3px 5px;
+  }
 }
