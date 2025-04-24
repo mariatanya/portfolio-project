@@ -6,11 +6,12 @@
   --heading-font-family: "Inter";
 }
 
-.container {
-}
-
 body {
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+body.about-page {
+  background-color: #f9f3f3;
 }
 
 h1,
